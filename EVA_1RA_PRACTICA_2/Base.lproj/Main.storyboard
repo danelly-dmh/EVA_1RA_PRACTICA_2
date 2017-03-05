@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA_1RA_PRACTICA_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7An-jO-dM4">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lh4-dX-KYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAMMOTH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiH-BN-l4i">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="39" y="0.0" width="100" height="23"/>
+                                                </variation>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-Dg-Drv">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="9hx-1s-OM8"/>
+                                                    <constraint firstAttribute="width" constant="178" id="b1D-k2-As7"/>
+                                                </constraints>
+                                                <string key="text">A mammoth is any species of the extinct genus Mammuthus, proboscideans commonly equipped with long, curved tusks and, in northern species, a covering of long hair.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="9hx-1s-OM8"/>
+                                                        <exclude reference="b1D-k2-As7"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="23" width="178" height="215"/>
+                                                    <mask key="constraints">
+                                                        <include reference="9hx-1s-OM8"/>
+                                                        <include reference="b1D-k2-As7"/>
+                                                    </mask>
+                                                </variation>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="6FW-Dg-Drv" firstAttribute="top" secondItem="HiH-BN-l4i" secondAttribute="bottom" id="017-2S-0nZ"/>
+                                            <constraint firstAttribute="height" constant="238" id="Ab9-rS-97K"/>
+                                            <constraint firstAttribute="width" constant="178" id="GUo-VW-TNO"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ab9-rS-97K"/>
+                                                <exclude reference="GUo-VW-TNO"/>
+                                                <exclude reference="017-2S-0nZ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="238"/>
+                                            <mask key="constraints">
+                                                <include reference="Ab9-rS-97K"/>
+                                                <include reference="GUo-VW-TNO"/>
+                                                <include reference="017-2S-0nZ"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ee3-A4-wIS">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELEPHANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMg-Ja-uFz">
+                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QHJ-7Q-rHn">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="Sfa-xe-ElA"/>
+                                                    <constraint firstAttribute="width" constant="169" id="vPl-N1-bmq"/>
+                                                </constraints>
+                                                <string key="text">Elephants are large mammals of the family Elephantidae and the order Proboscidea. Is the only surviving family of the order Proboscidea; other, now extinct, members of the order include mammoths and mastodons. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Sfa-xe-ElA"/>
+                                                        <exclude reference="vPl-N1-bmq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="Sfa-xe-ElA"/>
+                                                        <include reference="vPl-N1-bmq"/>
+                                                    </mask>
+                                                </variation>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="169" id="DI8-Bd-AiT"/>
+                                            <constraint firstAttribute="height" constant="238" id="ImZ-hd-W8M"/>
+                                            <constraint firstItem="QHJ-7Q-rHn" firstAttribute="top" secondItem="lMg-Ja-uFz" secondAttribute="bottom" id="oaQ-z5-yQ9"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DI8-Bd-AiT"/>
+                                                <exclude reference="ImZ-hd-W8M"/>
+                                                <exclude reference="oaQ-z5-yQ9"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="DI8-Bd-AiT"/>
+                                                <include reference="ImZ-hd-W8M"/>
+                                                <include reference="oaQ-z5-yQ9"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-Fh-ORw">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="74609-004-4834C543" translatesAutoresizingMaskIntoConstraints="NO" id="Uoj-B0-iLB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="african-elephant-standing_9033_600x450" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-85-x5K">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hor-AU-8a6"/>
+                                    <constraint firstAttribute="width" constant="354" id="wVb-X5-J5k"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hor-AU-8a6"/>
+                                        <exclude reference="wVb-X5-J5k"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hor-AU-8a6"/>
+                                        <include reference="wVb-X5-J5k"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dSt-Fh-ORw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="El8-yb-v5W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7An-jO-dM4" secondAttribute="bottom" constant="31" id="JHd-c2-uM7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7An-jO-dM4" secondAttribute="trailing" constant="6" id="M2d-EX-maz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dSt-Fh-ORw" secondAttribute="leading" id="exd-md-xHC"/>
+                            <constraint firstItem="dSt-Fh-ORw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjC-Ie-fxo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dSt-Fh-ORw" secondAttribute="trailing" constant="6" id="jCp-ct-jKk"/>
+                            <constraint firstItem="7An-jO-dM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="wWM-hy-SQt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7An-jO-dM4"/>
+                                <exclude reference="dSt-Fh-ORw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="El8-yb-v5W"/>
+                                <exclude reference="exd-md-xHC"/>
+                                <exclude reference="fjC-Ie-fxo"/>
+                                <exclude reference="jCp-ct-jKk"/>
+                                <exclude reference="M2d-EX-maz"/>
+                                <exclude reference="wWM-hy-SQt"/>
+                                <exclude reference="JHd-c2-uM7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7An-jO-dM4"/>
+                                <include reference="dSt-Fh-ORw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="El8-yb-v5W"/>
+                                <include reference="exd-md-xHC"/>
+                                <include reference="fjC-Ie-fxo"/>
+                                <include reference="jCp-ct-jKk"/>
+                                <include reference="M2d-EX-maz"/>
+                                <include reference="wWM-hy-SQt"/>
+                                <include reference="JHd-c2-uM7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="74609-004-4834C543" width="550" height="434"/>
+        <image name="african-elephant-standing_9033_600x450" width="600" height="450"/>
+    </resources>
+</document>
